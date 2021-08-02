@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PickMyBrain|Payment</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!----font aswesome cdn--->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<!------google font---->
+
+</head>
+<body>
+<div id="nav-bar">
+	<div class="toggle-btn" onclick='myFunction();'>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="logo"><a href="index.html"><img src="images/logo1.png"></a></div>
+	<nav id="nav">
+	
+		<ul>
+			<li><a href="#">browser offers</a></li>
+			<li><a href="#">meet the brains</a></li>
+			<li><a href="#"><span>login</span></a></li>
+			
+		</ul>
+		
+	</nav>
+
+</div>
+<div class="payment-container">
+	<div class="membership">
+		<h1>annual membership</h1>
+		<div class="total-price">
+			<h2>total billed today</h2>
+			<form>
+				<input type="number" name="number-price" value="$">
+			</form>
+		</div>
+		<p>(plus applicable taxes)</p>
+	</div>
+
+
+	<div class="checkout">
+		<form action="" class="email-form">
+			<input type="text" class="email-input" placeholder="natalia@imaginebettersolutions.com">
+		</form>
+
+		<div class="foam-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="togging-btn" onclick="login()">Log In</button>
+				<button type="button" class="togging-btn" onclick="register()"><i class="fab fa-cc-paypal"></i></button>	
+			</div>
+			
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="Card Number" required>
+				<input type="password" class="input-field" placeholder="MM/YY/CVC" required>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="email" class="input-field" placeholder="E-mail ID" required>
+			</form>
+		</div>
+		<p>By clicking "Place Order", you agree to enroll in our annual subscription plan and to our <a href="#">Terms of Service </a> Your payment method will be charged the price above the first year and annually thereafter at the same rate (unless we notify you of a change before renewal), plus any applicable taxes. Cancel any time in Settings. No refunds for partial unused periods.</p>
+
+		<input type="button" class="order-btn" name="button" value="place secure order">
+		<div class="ssl">
+			<p><i class="fas fa-lock"></i>Secured With SSL</p>
+			<p>Satisfaction Guaranteed</p>
+		</div>
+
+	</div>
+</div>
+<footer>
+	<div class="guaranteed">
+		<h1>100% guaranteed</h1>
+		<p>We offer a 30-day money back guaranteed if you don't love the Annual Membership</p>
+	</div>
+	<div class="footer-ssl">
+		<form action="" class="ssl-form">
+				<button class="ssl-btn" type="submit">
+						<i class="fas fa-lock"></i>
+					</button>
+				<input type="text" class="ssl-input" placeholder="Secured With SSL">
+		</form>
+			<p>have a question?</p>
+			<h3>1-855-981-8208</h3>
+		
+	</div>
+</footer>
+
+	<script src="script.js"></script>
+	<script>
+	function myFunction(){
+		var navbar = document.getElementById('nav');
+		navbar.classList.toggle('show');
+	}
+</script>
+</body>
+</html>
